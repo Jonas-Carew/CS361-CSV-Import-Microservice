@@ -5,6 +5,8 @@
 
 This microservice allows a program to import a CSV file into an easily usable 'list of lists' format in Python using the ZeroMQ communication library in Python. Specifications on requesting and receiving data are below, along with a UML sequence diagram showing the standard communication with a consumer program.
 
+Additionally, this repository contains a sample consumer program `testCSVImportMicroservice.py`, which will print out the first ten rows of data that it receives back from the CSV import microservice, and a sample CSV file `testCSV.csv`, which contains a header and 100 lines of sample data.
+
 ## Request Format
 
 A standard request to this microservice comes in the form of a ZMQ string send of the file path. The microservice will then attempt to fetch the file and parse its contents, if it is found. An example call is below:
