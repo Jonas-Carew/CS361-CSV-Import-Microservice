@@ -32,3 +32,7 @@ ERROR: Path does not lead to a CSV file
 ERROR: File does not exist
 ```
 
+## UML Sequence Diagram
+
+![UML Sequence Diagram for the CSV Import Microservice](./CSVImportMicroservice_UMLSequenceDiagram.png)
+
