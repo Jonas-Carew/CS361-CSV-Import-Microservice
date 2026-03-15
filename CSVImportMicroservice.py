@@ -16,12 +16,6 @@ def error(err_num):
 while True:
     recv = socket.recv_string()
 
-    if (len(recv) < 4):
-        error(0)
-        continue
-    if not (recv[-4:] == ".csv"):
-        error(0)
-        continue
     try:
         with open(recv, 'r') as file:
             socket.send_string("VALID",zmq.SNDMORE)
